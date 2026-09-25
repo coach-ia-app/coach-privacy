@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coach · Privacy policy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>Coach privacy policy</h1>
+<p class="meta">Android app “Coach” (com.local.fitnesscoach) · Last updated: 25 September 2026 · <a href="index.html">Versión en español</a></p>
+
+<p>Coach is a personal sports and nutrition coach. It reads the health and activity data you authorise (for example from Health Connect or from your Garmin watch) to show your training readiness, workouts, sleep, body composition and nutrition, and to create training plans and recommendations adapted to you. This policy explains what data the app uses, why, where it is stored and who it is shared with.</p>
+
+<h2>1. Controller and contact</h2>
+<p>The app is published by its independent developer. For any privacy question or to exercise your rights, write to <a href="mailto:coach.ia.app@gmail.com">coach.ia.app@gmail.com</a>.</p>
+
+<h2>2. Health data the app accesses (Health Connect)</h2>
+<p>Coach <strong>only reads</strong> Health Connect data; it never writes or changes records in Health Connect. It reads only the types you allow on the Health Connect permission screen, and you can withdraw each permission at any time in the Health Connect settings.</p>
+<table>
+<tr><th>Data type</th><th>What Coach uses it for</th></tr>
+<tr><td>Exercise sessions and their GPS routes (with your per-session consent)</td><td>Showing your workouts, the route map and the daily plan-adherence evaluation; computing training load.</td></tr>
+<tr><td>Heart rate, resting heart rate and heart rate variability (HRV)</td><td>Computing your readiness and recovery, the intensity zones of each session and trend charts.</td></tr>
+<tr><td>Sleep</td><td>Sleep duration, stages and efficiency; the sleep factor of readiness.</td></tr>
+<tr><td>Steps, distance, elevation gained, speed, power and cadence (cycling and steps)</td><td>Detail of each activity, daily activity summary and trends.</td></tr>
+<tr><td>Total and active calories burned, basal metabolic rate</td><td>Daily energy balance and the plan's calorie targets.</td></tr>
+<tr><td>Nutrition and hydration</td><td>Calories, macronutrients and micronutrients eaten against the plan's targets.</td></tr>
+<tr><td>Weight, height, body fat, lean mass, bone mass and body water</td><td>Body composition, body mass index, body goals and nutrition targets.</td></tr>
+<tr><td>Oxygen saturation, respiratory rate and VO₂ max</td><td>Health summary and fitness trends.</td></tr>
+<tr><td>Background access</td><td>Keeping your data up to date periodically (every few hours, and hourly while a Coach widget is on your home screen) without opening the app.</td></tr>
+<tr><td>History access</td><td>Reading up to one year of past data to compute your personal baselines (for example the 28-day HRV average) and show long-term trends.</td></tr>
+</table>
+<p>Health Connect data is used only to provide the app features described above. <strong>It is not used for advertising, is not sold, and is not used to determine creditworthiness or for lending purposes.</strong> The use of information received from Health Connect adheres to the <a href="https://support.google.com/googleplay/android-developer/answer/12991134">Health Connect Permissions policy</a>, including the Limited Use requirements.</p>
+
+<h2>3. Other data</h2>
+<ul>
+<li><strong>Watch and platform accounts you connect</strong> (Garmin Connect, Polar, Suunto, COROS, Fitbit, Huawei): the same kinds of activity, sleep and health data, downloaded from those platforms with your authorisation. Sign-in sessions are stored encrypted on the device.</li>
+<li><strong>Data you enter</strong>: goals, sports, diet, allergies or limitations, chat messages with the coach and routes you create.</li>
+<li><strong>Location</strong>: Coach does not use the phone's GPS. The locations it handles are the routes of your activities and the starting point you choose when creating a route.</li>
+</ul>
+<p>Coach contains no advertising and no third-party analytics or tracking tools.</p>
+
+<h2>4. Where data is stored</h2>
+<p>All data is stored <strong>on your device</strong>, in the app's private storage. The developer runs no servers and does not receive your data. Settings and credentials are stored encrypted with an Android Keystore key, and Android automatic backup is disabled. Only if you ask for it, you can export a backup to a location you choose, optionally encrypted with a password (AES-256-GCM).</p>
+
+<h2>5. When data leaves the device</h2>
+<p>Data leaves the device only for features you turn on:</p>
+<ul>
+<li><strong>Artificial intelligence</strong>: in LOCAL mode everything is processed on the phone with a downloaded model. In HYBRID and REMOTE modes, to create plans, answer chat questions or analyse periods, a <em>summary</em> of your health, activity and nutrition data is sent together with your question to the AI provider you configure with your own key (OpenAI, Google Gemini, Anthropic, DeepSeek or Azure OpenAI). GPS routes and full heart-rate series are not sent. Processing by that provider is governed by its own privacy policy.</li>
+<li><strong>Body composition upload to Garmin</strong> (off by default): if you turn it on, Coach sends your weight, body fat, body water, bone mass, basal metabolic rate and BMI to your Garmin Connect account.</li>
+<li><strong>Route creation</strong>: the starting point, distance and sport are sent to OpenRouteService (with your key), and place names you type are sent to Nominatim (OpenStreetMap) to locate them.</li>
+<li><strong>Maps</strong>: to draw the map, tiles for the visible area are requested from Esri (ArcGIS) or OpenTopoMap.</li>
+<li><strong>Local AI models</strong>: downloaded from Hugging Face; no health data is sent in that download.</li>
+</ul>
+
+<h2>6. Retention and deletion</h2>
+<p>Data stays on your device while you use the app. You can delete it at any time from <em>Settings → Data and privacy → Delete local data</em>; uninstalling the app also deletes it. Withdrawing a Health Connect permission stops new reads; to delete what is already stored, use the delete option. Local deletion does not remove backups you exported or data already in Garmin, other platforms or your AI provider.</p>
+
+<h2>7. Your rights</h2>
+<p>Because the data is on your device, you can view, export and delete it directly in the app. For any other request, write to the contact address.</p>
+
+<h2>8. Children</h2>
+<p>Coach is not directed at children under 16.</p>
+
+<h2>9. Changes</h2>
+<p>If this policy changes, the new version will be published here with a new update date.</p>
+</main>
+</body>
+</html>
