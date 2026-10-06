@@ -9,7 +9,7 @@
 <body>
 <main>
 <h1>Coach privacy policy</h1>
-<p class="meta">Android app “Coach” (com.local.fitnesscoach) · Last updated: 25 September 2026 · <a href="index.html">Versión en español</a></p>
+<p class="meta">Android app “Coach” (com.local.fitnesscoach) · Last updated: 6 October 2026 · <a href="index.html">Versión en español</a></p>
 
 <p>Coach is a personal sports and nutrition coach. It reads the health and activity data you authorise (for example from Health Connect or from your Garmin watch) to show your training readiness, workouts, sleep, body composition and nutrition, and to create training plans and recommendations adapted to you. This policy explains what data the app uses, why, where it is stored and who it is shared with.</p>
 
@@ -31,7 +31,7 @@
 <tr><td>Background access</td><td>Keeping your data up to date periodically (every few hours, and hourly while a Coach widget is on your home screen) without opening the app.</td></tr>
 <tr><td>History access</td><td>Reading up to one year of past data to compute your personal baselines (for example the 28-day HRV average) and show long-term trends.</td></tr>
 </table>
-<p>Health Connect data is used only to provide the app features described above. <strong>It is not used for advertising, is not sold, and is not used to determine creditworthiness or for lending purposes.</strong> The use of information received from Health Connect adheres to the <a href="https://support.google.com/googleplay/android-developer/answer/12991134">Health Connect Permissions policy</a>, including the Limited Use requirements.</p>
+<p>Health Connect data is used only to provide the app features described above. <strong>It is not used for advertising, is not sold, is not used to determine creditworthiness or for lending purposes, and is not used or transferred to train generalized artificial intelligence and/or machine learning models.</strong> The use of information received from Health Connect adheres to the <a href="https://support.google.com/googleplay/android-developer/answer/12991134">Health Connect Permissions policy</a>, including the Limited Use requirements.</p>
 
 <h2>3. Other data</h2>
 <ul>
@@ -48,7 +48,7 @@
 <h2>5. When data leaves the device</h2>
 <p>Data leaves the device only for features you turn on:</p>
 <ul>
-<li><strong>Artificial intelligence</strong>: in LOCAL mode everything is processed on the phone with a downloaded model. In HYBRID and REMOTE modes, to create plans, answer chat questions or analyse periods, a <em>summary</em> of your health, activity and nutrition data is sent together with your question to the AI provider you configure with your own key (OpenAI, Google Gemini, Anthropic, DeepSeek or Azure OpenAI). GPS routes and full heart-rate series are not sent. Processing by that provider is governed by its own privacy policy.</li>
+<li><strong>Artificial intelligence</strong>: in LOCAL mode everything is processed on the phone with a downloaded model. In HYBRID and REMOTE modes, to create plans, answer chat questions or analyse periods, a <em>summary</em> of your health, activity and nutrition data is sent together with your question to the AI provider you configure with your own key (OpenAI, Google Gemini, Anthropic, DeepSeek or Azure OpenAI). GPS routes and full heart-rate series are not sent. Health data sent to these API endpoints is processed solely to generate the coach's real-time advice and is not retained or used by those providers to train machine learning models.</li>
 <li><strong>Body composition upload to Garmin</strong> (off by default): if you turn it on, Coach sends your weight, body fat, body water, bone mass, basal metabolic rate and BMI to your Garmin Connect account.</li>
 <li><strong>Route creation</strong>: the starting point, distance and sport are sent to OpenRouteService (with your key), and place names you type are sent to Nominatim (OpenStreetMap) to locate them.</li>
 <li><strong>Maps</strong>: to draw the map, tiles for the visible area are requested from Esri (ArcGIS) or OpenTopoMap.</li>
