@@ -35,10 +35,10 @@
 
 <h2>3. Otros datos</h2>
 <ul>
-<li><strong>Cuentas de relojes y plataformas que conectes</strong> (Garmin Connect, Polar, Suunto, COROS, Fitbit, Huawei): los mismos tipos de datos de actividad, sueño y salud, descargados desde esas plataformas con tu autorización. Las sesiones de acceso se guardan cifradas en el dispositivo.</li>
+<li><strong>Cuentas de relojes y plataformas que conectes</strong> (Garmin Connect, Suunto, COROS, Fitbit, Huawei): los mismos tipos de datos de actividad, sueño y salud, descargados desde esas plataformas con tu autorización. Las sesiones de acceso se guardan cifradas en el dispositivo.</li>
 <li><strong>Datos que introduces tú</strong>: objetivos, deportes, dieta, alergias o limitaciones, mensajes del chat con el coach y rutas creadas.</li>
 <li><strong>Micrófono</strong>: solo cuando pulsas el botón de dictado del chat. El audio lo transcribe el servicio de reconocimiento de voz de Android que tengas instalado; Coach no guarda grabaciones y solo usa el texto resultante.</li>
-<li><strong>Ubicación</strong>: Coach no usa el GPS del teléfono. Las ubicaciones que maneja son las rutas de tus actividades y el punto de salida que eliges al crear una ruta.</li>
+<li><strong>Ubicación (GPS)</strong>: Coach solicita acceso a la ubicación (precisa y aproximada) únicamente en primer plano y de forma opcional cuando decides iniciar una ruta desde tu posición actual en el chat del entrenador. Dicha ubicación se consulta puntualmente en ese instante para calcular el recorrido circular; Coach nunca rastrea tu ubicación en segundo plano. Además, la aplicación muestra las rutas GPS de tus actividades importadas o autorizadas desde Health Connect y las plataformas conectadas.</li>
 </ul>
 <p>Coach no incluye publicidad ni herramientas de analítica o seguimiento de terceros.</p>
 
@@ -50,7 +50,7 @@
 <ul>
 <li><strong>Inteligencia artificial</strong>: en modo LOCAL todo se procesa en el teléfono con un modelo descargado. En los modos HÍBRIDO y REMOTO, para generar planes, responder al chat o analizar periodos, se envía un <em>resumen</em> de tus datos de salud, actividad y nutrición, junto con tu pregunta, al proveedor de IA que configures con tu propia clave (OpenAI, Google Gemini, Anthropic, DeepSeek o Azure OpenAI). No se envían tus rutas GPS ni las series completas de frecuencia cardiaca. Los datos de salud transmitidos a las APIs de dichos proveedores se utilizan exclusivamente para generar la respuesta solicitada en tiempo real y no se conservan ni utilizan para entrenar modelos de IA.</li>
 <li><strong>Envío de composición corporal a Garmin</strong> (desactivado por defecto): si lo activas, Coach envía a tu cuenta de Garmin Connect tu peso, grasa corporal, agua corporal, masa ósea, metabolismo basal e IMC.</li>
-<li><strong>Creación de rutas</strong>: se envían el punto de salida, la distancia y el deporte a OpenRouteService (con tu clave), y los nombres de lugares que escribas a Nominatim (OpenStreetMap) para localizarlos.</li>
+<li><strong>Creación de rutas</strong>: cuando solicitas trazar una ruta, el punto de salida (que puede corresponder a tus coordenadas GPS obtenidas puntualmente si eliges tu ubicación actual), la distancia y el deporte se envían a OpenRouteService (con tu clave) para calcular el trazado por caminos reales. Los nombres de lugares que escribas manualmente se envían a Nominatim (OpenStreetMap) para localizarlos. Las coordenadas del móvil no se rastrean en segundo plano ni se almacenan en servidores.</li>
 <li><strong>Mapas</strong>: para dibujar el mapa se piden teselas de la zona visible a Esri (ArcGIS) u OpenTopoMap.</li>
 <li><strong>Modelos de IA local</strong>: se descargan de Hugging Face; en esa descarga no se envían datos de salud.</li>
 </ul>
