@@ -48,6 +48,7 @@
 <h2>4. Where data is stored</h2>
 <p>All data is stored <strong>on your device</strong>, in the app's private storage. The developer runs no servers and does not receive your data. Settings and credentials are stored encrypted with an Android Keystore key, and Android automatic backup is disabled. Only if you ask for it, you can export a backup to a location you choose, optionally encrypted with a password (AES-256-GCM).</p>
 <p>The Room database has no separate database encryption and uses Android-protected private storage. Database backups include training results and do not export credentials. Validated blocks from an interrupted local generation may be retained as private checkpoints tied to the same context and model. They are deleted with local data and are not reused as a new plan after an attempt completes.</p>
+<p>User-initiated plan generation can continue in the background through a service with a progress notification and cancellation. The CPU is kept awake temporarily during that work, for at most thirty minutes. Only the execution state and general outcome are saved to report interruptions; the previous plan is retained until the new one is validated and saved. If Android terminates the process, that remote generation request is not restarted automatically. Network retries are limited to DNS failures before HTTP transmission and respect the selected AI provider and mode.</p>
 
 <h2>5. When data leaves the device</h2>
 <p>Data leaves the device only for features you turn on:</p>
