@@ -9,7 +9,7 @@
 <body>
 <main>
 <h1>Política de privacidad de Coach</h1>
-<p class="meta">Aplicación Android «Coach» (com.local.fitnesscoach) · Última actualización: 6 de octubre de 2026 · <a href="en.html">English version</a></p>
+<p class="meta">Aplicación Android «Coach» (com.local.fitnesscoach) · Última actualización: 28 de octubre de 2026 · <a href="en.html">English version</a></p>
 
 <p>Coach es un entrenador personal de deporte y nutrición. Lee los datos de salud y actividad que tú autorizas (por ejemplo desde Health Connect o desde tu reloj Garmin) para mostrarte tu estado de preparación, tus entrenamientos, tu sueño, tu composición corporal y tu nutrición, y para generar planes de entrenamiento y recomendaciones adaptadas a ti. Esta política explica qué datos usa la aplicación, para qué, dónde se guardan y con quién se comparten.</p>
 
@@ -23,11 +23,11 @@
 <tr><td>Sesiones de ejercicio y sus rutas GPS (con tu consentimiento por sesión)</td><td>Mostrar tus entrenamientos, el mapa de rutas y la evaluación diaria de cumplimiento del plan; calcular la carga de entrenamiento.</td></tr>
 <tr><td>Frecuencia cardiaca, frecuencia cardiaca en reposo y variabilidad de la frecuencia cardiaca (VFC)</td><td>Calcular tu estado de preparación y recuperación, las zonas de intensidad de cada sesión y las gráficas de tendencia.</td></tr>
 <tr><td>Sueño</td><td>Duración, fases y eficiencia del sueño; factor de sueño de la preparación.</td></tr>
-<tr><td>Pasos, distancia, desnivel, velocidad, potencia y cadencia (pedaleo y pasos)</td><td>Detalle de cada actividad, resumen diario de actividad y tendencias.</td></tr>
+<tr><td>Pasos, distancia, velocidad y cadencia (pedaleo y pasos)</td><td>Detalle de cada actividad, resumen diario de actividad y tendencias.</td></tr>
 <tr><td>Calorías totales y activas quemadas, metabolismo basal</td><td>Balance energético diario y objetivos de calorías del plan.</td></tr>
 <tr><td>Nutrición e hidratación</td><td>Calorías, macronutrientes y micronutrientes consumidos frente a los objetivos del plan.</td></tr>
-<tr><td>Peso, altura, grasa corporal, masa magra, masa ósea y agua corporal</td><td>Composición corporal, índice de masa corporal, objetivos corporales y cálculo de objetivos nutricionales.</td></tr>
-<tr><td>Saturación de oxígeno, frecuencia respiratoria y VO₂ máx.</td><td>Resumen de salud y tendencias de forma física.</td></tr>
+<tr><td>Peso, altura, grasa corporal y agua corporal</td><td>Composición corporal, índice de masa corporal, objetivos corporales y cálculo de objetivos nutricionales.</td></tr>
+<tr><td>Saturación de oxígeno y frecuencia respiratoria</td><td>Resumen de salud y tendencias.</td></tr>
 <tr><td>Acceso en segundo plano</td><td>Actualizar tus datos periódicamente (cada pocas horas, y cada hora si tienes un widget de Coach en la pantalla de inicio) sin tener que abrir la aplicación.</td></tr>
 <tr><td>Acceso al historial</td><td>Leer hasta un año de datos anteriores para calcular tus referencias personales (por ejemplo la media de VFC de 28 días) y mostrar tendencias largas.</td></tr>
 </table>
@@ -35,20 +35,25 @@
 
 <h2>3. Otros datos</h2>
 <ul>
-<li><strong>Cuentas de relojes y plataformas que conectes</strong> (Garmin Connect, Suunto, COROS, Fitbit, Huawei): los mismos tipos de datos de actividad, sueño y salud, descargados desde esas plataformas con tu autorización. Las sesiones de acceso se guardan cifradas en el dispositivo.</li>
+<li><strong>Cuentas de relojes y plataformas que conectes</strong> (Garmin Connect, Suunto, COROS): los mismos tipos de datos de actividad, sueño y salud, descargados desde esas plataformas con tu autorización. Las sesiones de acceso se guardan cifradas en el dispositivo. Otras aplicaciones de salud pueden aportar datos mediante Health Connect si los publican allí y autorizas su lectura.</li>
 <li><strong>Datos que introduces tú</strong>: objetivos, deportes, dieta, alergias o limitaciones, mensajes del chat con el coach y rutas creadas.</li>
-<li><strong>Micrófono</strong>: solo cuando pulsas el botón de dictado del chat. El audio lo transcribe el servicio de reconocimiento de voz de Android que tengas instalado; Coach no guarda grabaciones y solo usa el texto resultante.</li>
+<li><strong>Resultados de entrenamiento opcionales</strong>: actividades asociadas a una sesión, esfuerzo percibido (RPE), repeticiones en reserva (RIR), ejercicios, series, repeticiones, cargas y notas. Se conservan junto con la prescripción de referencia para comparar lo previsto con lo realizado.</li>
+<li><strong>Detalle de actividades de fabricantes</strong>: vueltas, definiciones e índices de pasos, referencias de guías y series activas con repeticiones y peso, cuando están disponibles en archivos FIT. El FIT de Garmin se descarga bajo petición; se procesa en memoria con límites de tamaño, sin guardar ni extraer una copia del archivo original. Se conserva su detalle estructurado en la aplicación.</li>
+<li><strong>Cámara y fotos</strong>: solo al importar un entrenamiento eliges una imagen o tomas una foto. Se reduce sin conservar sus metadatos originales. En LOCAL se procesa con un modelo compatible en el dispositivo; en REMOTO o HÍBRIDO puede enviarse al proveedor de IA configurado. Se conserva el entrenamiento extraído únicamente cuando confirmas su guardado.</li>
+<li><strong>Micrófono</strong>: solo al solicitarlo. El dictado editable usa el reconocimiento de voz de Android; en LOCAL exige reconocimiento en el dispositivo y, si no está disponible, permite escribir. En otros modos el servicio de voz puede procesar audio en red. Con un modelo local compatible se pueden grabar hasta 30 segundos de audio WAV y analizarlos directamente en el dispositivo. El audio y las fotos no se guardan en Room ni en la caché de respuestas; los temporales privados se eliminan tras su uso o cancelación, y los abandonados se depuran pasadas 24 horas al reutilizar la función.</li>
 <li><strong>Ubicación (GPS)</strong>: Coach solicita acceso a la ubicación (precisa y aproximada) únicamente en primer plano y de forma opcional cuando decides iniciar una ruta desde tu posición actual en el chat del entrenador. Dicha ubicación se consulta puntualmente en ese instante para calcular el recorrido circular; Coach nunca rastrea tu ubicación en segundo plano. Además, la aplicación muestra las rutas GPS de tus actividades importadas o autorizadas desde Health Connect y las plataformas conectadas.</li>
 </ul>
 <p>Coach no incluye publicidad ni herramientas de analítica o seguimiento de terceros.</p>
 
 <h2>4. Dónde se guardan los datos</h2>
 <p>Todos los datos se guardan <strong>en tu dispositivo</strong>, en el almacenamiento privado de la aplicación. El desarrollador no tiene servidores y no recibe tus datos. La configuración y las credenciales se guardan cifradas con una clave del Android Keystore, y la copia de seguridad automática de Android está desactivada. Solo si tú lo pides, puedes exportar una copia de seguridad a la ubicación que elijas, opcionalmente cifrada con contraseña (AES-256-GCM).</p>
+<p>La base de datos Room no incorpora cifrado propio y utiliza el almacenamiento privado protegido por Android. Las copias de la base incluyen los resultados de entrenamiento; no exportan credenciales. Los bloques validados de una generación local interrumpida pueden conservarse como puntos de reanudación privados, vinculados al mismo contexto y modelo. Se eliminan con el borrado de datos y no se reutilizan como un plan nuevo tras finalizar un intento.</p>
 
 <h2>5. Cuándo salen datos del dispositivo</h2>
 <p>Los datos solo salen del dispositivo para las funciones que activas tú:</p>
 <ul>
-<li><strong>Inteligencia artificial</strong>: en modo LOCAL todo se procesa en el teléfono con un modelo descargado. En los modos HÍBRIDO y REMOTO, para generar planes, responder al chat o analizar periodos, se envía un <em>resumen</em> de tus datos de salud, actividad y nutrición, junto con tu pregunta, al proveedor de IA que configures con tu propia clave (OpenAI, Google Gemini, Anthropic, DeepSeek o Azure OpenAI). No se envían tus rutas GPS ni las series completas de frecuencia cardiaca. Los datos de salud transmitidos a las APIs de dichos proveedores se utilizan exclusivamente para generar la respuesta solicitada en tiempo real y no se conservan ni utilizan para entrenar modelos de IA.</li>
+<li><strong>Inteligencia artificial</strong>: en LOCAL la inferencia utiliza un modelo descargado y no se envía a un proveedor remoto. En HÍBRIDO o REMOTO, según la tarea y la configuración, se pueden enviar objetivos, plan, conversación y resúmenes de salud, actividad y nutrición al proveedor o gateway configurado con tu clave (OpenAI, Google Gemini, Anthropic, DeepSeek, Azure, OpenRouter u OpenCode). La revisión del objetivo puede incluir resúmenes de RPE, RIR, ejercicios, repeticiones y cargas; sus notas libres e identificadores de actividades no se añaden a ese resumen. No se adjuntan rutas GPS ni series completas de frecuencia cardiaca como tracks. Coach envía estos datos para generar la respuesta solicitada, no con fines de entrenamiento de modelos. La conservación y el tratamiento en el servidor dependen de las condiciones del proveedor y la configuración de tu cuenta.</li>
+<li><strong>Envío de entrenamientos</strong>: si activas la publicación en Garmin, Suunto o COROS, se envían a tu cuenta las fechas, deportes, pasos, objetivos, instrucciones y cargas que contenga el entrenamiento. La confirmación de la plataforma no garantiza su recepción o ejecución en un reloj. Los resultados manuales y las notas de seguimiento no se publican como parte de ese envío.</li>
 <li><strong>Envío de composición corporal a Garmin</strong> (desactivado por defecto): si lo activas, Coach envía a tu cuenta de Garmin Connect tu peso, grasa corporal, agua corporal, masa ósea, metabolismo basal e IMC.</li>
 <li><strong>Creación de rutas</strong>: cuando solicitas trazar una ruta, el punto de salida (que puede corresponder a tus coordenadas GPS obtenidas puntualmente si eliges tu ubicación actual), la distancia y el deporte se envían a OpenRouteService (con tu clave) para calcular el trazado por caminos reales. Los nombres de lugares que escribas manualmente se envían a Nominatim (OpenStreetMap) para localizarlos. Las coordenadas del móvil no se rastrean en segundo plano ni se almacenan en servidores.</li>
 <li><strong>Mapas</strong>: para dibujar el mapa se piden teselas de la zona visible a Esri (ArcGIS) u OpenTopoMap.</li>
